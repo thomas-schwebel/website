@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './lightbox.css';
 
 export default class Lightbox extends React.Component {
     renderContent(item) {
@@ -7,7 +8,7 @@ export default class Lightbox extends React.Component {
         
         return (
             <>
-              <img style={imgStyles} src={item.src} alt={item.title}/>
+              <img id='lightbox-img' src={item.src} alt={item.title}/>
               <h1 id='title'>
                   {item.title}
               </h1>
@@ -20,9 +21,9 @@ export default class Lightbox extends React.Component {
         const { showLightbox, items, currentIndex, onClose } = this.props;
     
         return (
-        <div id='lightbox' style={styles(showLightbox)} onClick={onClose}>
-            <div id='lightbox-inner' style={innerStyles}>
-              <button id='close' style={closeBtnStyles} onClick={onClose}>
+        <div id={`lightbox-${showLightbox?'on':'off'}`} onClick={onClose}>
+            <div id='lightbox-inner'>
+              <button id='close' onClick={onClose}>
                 <b>X</b>
               </button>
               { currentIndex !== -1 && this.renderContent(items[currentIndex]) }
@@ -42,42 +43,4 @@ Lightbox.propTypes = {
       })).isRequired,
     currentIndex: PropTypes.number.isRequired,
     onClose:PropTypes.func
-}
-
-const closeBtnStyles = {
-    float: 'right',
-    border: 0
-}
-
-const styles = showLightbox => { 
-    const base = {
-        display: 'none',
-        position: 'fixed',
-        background: 'rgba(0,0,0,0.75)',    
-        top: 0,
-        right: 0,
-        bottom: 0,
-        left: 0,
-        zIndex: 100
-    }
-
-    if (showLightbox) {
-        return {
-            ...base,
-            display: 'grid',
-            alignItems: 'center',
-            justifyItems: 'center',
-        }
-    }
-
-    return base;
-};
-
-const innerStyles = {
-    maxWidth: '1000px',
-    padding: '20px',
-}
-
-const imgStyles = {
-    width: '100%'
 }
