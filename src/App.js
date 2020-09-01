@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
-function App() {
+import Resume from './pages/resume';
+import Photos from './pages/photos';
+import Code from './pages/code';
+
+
+export default function Tschwebel() {
+
+  var grid_not_supported = typeof document.createElement('div').style.grid !== 'string';
+  if (grid_not_supported) {
+      alert("Sorry you need a proper internet browser in order to use this website... Redirecting to PDF version...");
+      window.location = `${process.env.PUBLIC_URL}/resume.pdf`;
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="content">
+      <Router>
+          <Switch>
+            <Route exact path="/" component={Resume} />
+            <Route exact path="/photos" component={Photos} />
+            <Route exact path="/code" component={Code} />
+          </Switch>
+      </Router>
     </div>
   );
 }
-
-export default App;

@@ -1,0 +1,9 @@
+#lightbox-inner {
+    background: white;
+}
+
+@media (prefers-color-scheme: dark) {
+    #lightbox-inner {
+        background: grey;
+    }
+}

@@ -1,0 +1,228 @@
+b {
+    color: var(--highlight-color);
+}
+
+p, #skills ul li {
+    line-height: 130%;
+}
+
+#name, h1, h2 {
+    font-family: Impact, Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1em;
+}
+
+#info #name {
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 70px;
+    line-height: 90%;
+}
+
+#photo, #info, #footer {
+    text-align: center;
+}
+
+#contact {
+    margin-top: 10px;
+}
+
+#contact #tel {
+    display: none;
+}
+
+#info ul li {
+    list-style-type: none;
+}
+
+#info ul {
+    padding-inline-start: 0;
+}
+
+#skills ul {
+    padding-left: 20px;
+}
+
+section h1 {
+    text-transform: uppercase;
+    color:var(--title-color);
+    border-bottom: 2px solid var(--dark-orange);
+}
+
+section h3 {
+    color: var(--highlight-color);
+    letter-spacing: 0.15em;
+}
+
+a:visited, a:link
+{
+    color: var(--body-color);
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+section article h3, h4, h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.desc {
+    margin: 0.5em 2em 0 2em;
+}
+
+section article .date {
+    color:var(--sub-color);
+    font-weight: normal;
+}
+
+#photo {
+    grid-area: photo;
+}
+
+#info {
+    grid-area: info;
+}
+
+#xp {
+    grid-area: xp;
+}
+
+#about {
+    grid-area: about;
+}
+
+#skills {
+    grid-area: skills;
+}
+
+#lang {
+    grid-area: lang;
+}
+
+#links {
+    grid-area: links;
+}
+
+#edu {
+    grid-area: edu;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+.content {
+    margin: 10px;
+}
+
+.Resume {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "photo"
+    "info"
+    "about"
+    "xp"
+    "edu"
+    "skills"
+    "education"
+    "lang"
+    "links"
+    "footer"
+}
+
+@media (min-width: 1000px),
+print {
+    .content {
+        margin: 40px auto;
+        max-width: 1000px;
+    }
+
+    .Resume {
+        grid-gap: 30px;
+        grid-template-areas: "photo  info   info"
+                             "xp     xp     about"
+                             "xp     xp     skills"
+                             "xp     xp     lang"
+                             "xp     xp     links"
+                             "edu    edu    ."
+                             "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #info #name {
+        text-align: unset;
+    }
+
+    #photo, #info {
+        text-align: unset;
+    }
+}
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+    width: 1em;
+    height: 1em;
+    margin-right: 5px;
+}
+  
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+fill: #000000;  
+}
+
+.svg-icon circle {
+stroke: #000000;
+stroke-width: 1;
+}
+
+@page {
+    padding: 0;
+    margin : 0;
+    size   : A4 portrait;
+}
+
+@media print {
+    .content {
+        margin   : 0;
+        max-width: 100%;
+        font-size: 80%;
+    }
+    
+    .Resume {
+        grid-gap : 10px;
+        grid-template-areas: "info info photo"
+                             "xp   xp   about"
+                             "xp   xp   skills"
+                             "xp   xp   lang"
+                             "xp   xp   edu";
+    }
+
+    #contact #tel {
+        display: unset;
+    }
+
+    #info #name {
+        font-size: 20px;
+    }
+
+    #photo img {
+        width: 50%;
+        margin-top: 15px;
+    }
+
+    #edu .desc, #links {
+        display: none;
+    }
+
+    #footer {
+        display: none;
+    }
+}
