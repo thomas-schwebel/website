@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "npm run generate-pdf-resume && react-scripts build && mv build docs",
+    "build": "npm run generate-pdf-resume && react-scripts build && rm -rf docs && mv build docs",
     "eject": "react-scripts eject",
     "generate-pdf-resume": "concurrently --kill-others --success first npm:start \"wait-on http://localhost:3000/ && npx babel-node scripts/generate-pdf-resume.js\""
   },
