@@ -15,6 +15,7 @@
 }
 
 #lightbox-on {
+    overflow: scroll;
     position: fixed;
     background: rgba(0,0,0,0.75);
     top: 0;
