@@ -9,6 +9,5 @@ Online Resume / Portfolio
 TODO
 ------
 
-- Add Code Portfolio
 - Add Chatbot for FAQ
 - Improve Gallery (navigation, extract)
