@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import GalleryItem from '../gallery-item';
 import Lightbox from '../lightbox';
+import Hammer from 'hammerjs';
 
 export default class Gallery extends React.Component {
   state = {
@@ -44,23 +45,43 @@ export default class Gallery extends React.Component {
     }
 
     if (this.state.showLightbox) {
-      if (e.key === 'ArrowLeft' && this.state.currentIndex > 0) {
-        this.setState({ currentIndex: this.state.currentIndex - 1 });
+      if (e.key === 'ArrowLeft') {
+        this.prev();
       }
 
-
-      if (e.key === 'ArrowRight' && this.state.currentIndex < this.state.items.length - 1) {
-        this.setState({ currentIndex: this.state.currentIndex + 1 });
+      if (e.key === 'ArrowRight') {
+        this.next();
       }
+    }
+  }
+
+  next() {
+    if (this.state.currentIndex < this.state.items.length - 1) {
+      this.setState({ currentIndex: this.state.currentIndex + 1 });
+    }
+  }
+
+  prev() {
+    if (this.state.currentIndex > 0) {
+      this.setState({ currentIndex: this.state.currentIndex - 1 });
     }
   }
 
   componentDidMount() {
     window.addEventListener("keyup", this.keyHandling.bind(this));
+    
+    const lightboxInner = document.getElementById('lightbox-inner');
+    
+    this.mcHammer = Hammer(lightboxInner);
+    this.mcHammer.on('swipeleft', this.next.bind(this));
+    this.mcHammer.on('swiperight', this.prev.bind(this));
   }
 
   componentWillUnmount() {
     window.removeEventListener("keyup", this.keyHandling.bind(this));
+    
+    this.mcHammer.off('swipeleft');
+    this.mcHammer.off('swiperight');
   }
 
   render() {
