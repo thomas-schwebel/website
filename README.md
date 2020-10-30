@@ -11,4 +11,4 @@ TODO
 
 - Add Code Portfolio
 - Add Chatbot for FAQ
-- Improve Gallery (spinners, navigation, extract)
+- Improve Gallery (navigation, extract)

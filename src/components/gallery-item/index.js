@@ -8,14 +8,24 @@ export default class GalleryItem extends React.Component {
 
     return (
       <div id='gallery-item'>
+        <div className='spinner-container'>
+          <span className='thumb-spinner' id={`thumb-spinner${index}`} ></span>
+        </div>
         <img 
           src={thumb} 
           alt="gallery item"
           data-index={index}
           onClick={onClick}
+          onLoad={this.deleteSpinner}
         />
       </div>
     );
+  }
+
+  deleteSpinner(e) {
+    const index = e.target.getAttribute('data-index');
+    const spinner = document.getElementById(`thumb-spinner${index}`);
+    spinner.parentNode.removeChild(spinner);
   }
 };
 
