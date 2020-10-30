@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import PropTypes from 'prop-types';
 import './lightbox.css';
 
@@ -8,7 +8,9 @@ export default class Lightbox extends React.Component {
         
         return (
             <>
-              <img id='lightbox-img' src={item.src} alt={item.title}/>
+              <Suspense>
+                <img id='lightbox-img' src={item.src} alt={item.title}/>
+              </Suspense>
               <h1 id='title'>
                   {item.title}
               </h1>
