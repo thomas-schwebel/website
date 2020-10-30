@@ -5,6 +5,7 @@ Online Resume / Portfolio
 - Dark mode
 - Printable (Media queries)
 - Auto generated PDF
+- Portfolio Gallery
 
 TODO
 ------
