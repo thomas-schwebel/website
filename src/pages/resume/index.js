@@ -43,16 +43,25 @@ function Resume() {
         <section id="xp">
             <h1>Work XP</h1>
             <article>
+                <h3>Freelancer</h3>
+                <Xp
+                    title="Software Engineer"
+                    from="Jan 21"
+                    to="now">
+                        <p>Platform Team @ Adevinta<br/>
+                        - Java 11, Spring boot, Google Cloud, Helm, Kubernetes<br/>
+                        - Building a local SAML identity provider based on OAuth + OpenID Connect<br/>
+                        - Identity migration from Keycloak, Auth0<br/>
+                        - CI/CD pipeline migration</p>
+                </Xp>
                 <h3>Midlife Crisis - Earth</h3>
                 <Xp
                     title="Trainee"
                     from="Jan 20"
-                    to="now">
+                    to="Dec 20">
                     <p>
-                        Disconnecting, sitting back and relaxing<br/>
-                        Learning about myself and others (places and cultures)<br/>
-                        Self organization, travel strategy and planning<br/>
-                        Mindful dailies and retrospectives
+                        Disconnecting, sitting back and relaxing. Learning about myself and others (places and cultures).<br/>
+                        Self organization, travel strategy and planning. Self-investment, nurturing mind and body.
                     </p>
                 </Xp>
                 <h3>mobile.de GmbH (eBay Inc) - Berlin, DE</h3>
@@ -62,14 +71,16 @@ function Resume() {
                     to="Dec 19">
                     <p>Driving architectural decisions within the team and collaborating with the platform team.<br/>
                     Building a hybrid server/client side rendering responsive search webapp.</p>	
-                    <p>Java, Golang, React.js</p>
+                    <p>Java 8+ backend using a gaming framework, Golang reverse proxy, React.js frontend.<br/>
+                    Dockerized Continuous Delivery on an OpenStack Cloud.</p>
                 </Xp>
                 <Xp
                     title="Software Engineer"
                     from="Feb 16"
                     to="Jan 18">
-                    <p>Revamp of the product detail page. Maintenance and tech debt reduction. AB Testing.</p>	
-                    <p>Java, Golang, ES6, grid layout</p>  
+                    <p>Revamp of the product detail page. SEO and Advertising related services.<br/>
+                    Maintenance and tech debt reduction. AB Testing.</p>	
+                    <p>Java 8, Golang, ES6, grid layout</p>  
                 </Xp>
                 <Xp
                     title="Junior Software Engineer"
@@ -77,7 +88,7 @@ function Resume() {
                     to="Jan 16">
                     <p>Development and maintenance in an international and cross-functional team.<br/>
                         Migration from a monolith to a service oriented architecture.</p>
-                    <p>Java, jQuery</p>  
+                    <p>Java 7, jQuery</p>  
                 </Xp>
             </article>  
             <article>
@@ -86,9 +97,7 @@ function Resume() {
                     title="Backend Developer"
                     from="Sept 13"
                     to="Nov 13">
-                    <p>Implement and extend various back-end components.<br/>
-                    Optimization and automatization of the technical infrastructure.</p>
-                    <p>Ruby On Rails, TDD</p> 
+                    <p>Back-end, Ruby On Rails, TDD.</p>
                 </Xp>
             </article>  
             <article>
@@ -96,7 +105,7 @@ function Resume() {
                 <Xp
                     title="Chief Life Explorer"
                     from="Sept 12"
-                    to="Apr 13">
+                    to="Sept 13">
                     <p>Responsible for enjoying life, traveling, discovering new places and cultures in our beautiful world.</p>
                 </Xp>
             </article>
@@ -148,8 +157,8 @@ function Resume() {
         <section id="about">
             <h1>About</h1>
             <article>
-                <p>So-called "Fullstack" <b>Software Engineer</b> eager to learn and grow technically.<br/><br/>
-                    Backend > Frontend.<br/><br/>
+                <p>Freelance "Fullstack" <b>Software Engineer</b> eager to learn and grow technically.<br/><br/>
+                    Backend > Frontend, Styling not so much, Happy to automate CI/CD.<br/><br/>
                     Affable and fun to work with, I like to pay attention to details when I build elegant and simple solutions that allow to move fast while breaking things :-)<br/><br/>
                     Looking for a creative place with a great culture where people are enabled.</p>
             </article>
@@ -163,6 +172,9 @@ function Resume() {
                     <li>JavaScript ES6+</li>
                     <li>React.js</li>
                     <li>jQuery</li>
+                    <li>Jenkins</li>
+                    <li>Docker</li>
+                    <li>Cloud</li>
                     <li>Git</li>
                     <li>Agile</li>
                     <li>OKR</li>
