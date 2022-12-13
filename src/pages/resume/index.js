@@ -48,11 +48,13 @@ function Resume() {
                     title="Software Engineer"
                     from="Jan 21"
                     to="now">
-                        <p>Platform Team @ Adevinta<br/>
-                        - Java 11, Spring boot, Google Cloud, Helm, Kubernetes<br/>
+                        <p>Platform Teams @ Adevinta<br/>
+                        - Java 9/11/17, Spring boot, Google Cloud, Helm, Kubernetes<br/>
                         - Building a local SAML identity provider based on OAuth + OpenID Connect<br/>
-                        - Identity migration from Keycloak, Auth0<br/>
-                        - CI/CD pipeline migration</p>
+                        - Identity migrations from Keycloak, Auth0<br/>
+                        - CI/CD pipeline migration<br/>
+                        - Onboardings / IRQ Helpdesk<br/>
+                        - Plumbing business (Legacy / Tech Debt)</p>
                 </Xp>
                 <h3>Midlife Crisis - Earth</h3>
                 <Xp
@@ -97,7 +99,7 @@ function Resume() {
                     title="Backend Developer"
                     from="Sept 13"
                     to="Nov 13">
-                    <p>Back-end, Ruby On Rails, TDD.</p>
+                    <p>Microservives, Back-end, Ruby On Rails, TDD.</p>
                 </Xp>
             </article>  
             <article>
@@ -115,15 +117,13 @@ function Resume() {
                     title="Messaging Engineer"
                     from="Mar 12"
                     to="Aug 12">
-                    <p>In charge of the maintenance, enhancement and support of the company's core technology, the mobile messaging platform that allow to deliver videos, pictures, audio and text to mobile devices.</p>	
-                    <p>Ruby, Rails, Shell, Git, Memcache, Mobile Messaging, SMPP, MM7 and SMIL</p>
+                    <p>In charge of the maintenance, enhancement and support of the company's core technology, the mobile messaging platform that allow to deliver videos, pictures, audio and text to mobile devices. Ruby, Rails, Shell, Git, Memcache, Mobile Messaging, SMPP, MM7 and SMIL</p>
                 </Xp>
                 <Xp
                     title="Software Engineer Intern"
                     from="Sept 10"
                     to="Feb 11">
-                    <p>Software development of services and applications delivering mobile messaging services.</p>	
-                    <p>RubyCocoa GUI, Ruby SDK, mobile website, Facebook App</p>   
+                    <p>Software development of services and applications delivering mobile messaging services. RubyCocoa GUI, Ruby SDK, mobile website, Facebook App</p>   
                 </Xp>
             </article>
         </section>
@@ -158,7 +158,7 @@ function Resume() {
             <h1>About</h1>
             <article>
                 <p>Freelance "Fullstack" <b>Software Engineer</b> eager to learn and grow technically.<br/><br/>
-                    Backend > Frontend, Styling not so much, Happy to automate CI/CD.<br/><br/>
+                    Backend guy but not afraid of Frontend, Styling not so much, Happy to automate CI/CD.<br/><br/>
                     Affable and fun to work with, I like to pay attention to details when I build elegant and simple solutions that allow to move fast while breaking things :-)<br/><br/>
                     Looking for a creative place with a great culture where people are enabled.</p>
             </article>
@@ -199,7 +199,7 @@ function Resume() {
             </article>
         </section>
         <section id="footer" className="center">
-            <p id="footnote">© Thomas SCHWEBEL 2020</p>
+            <p id="footnote">© Thomas SCHWEBEL 2022</p>
         </section>
     </div>
   );

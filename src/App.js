@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route
 } from "react-router-dom";
 
@@ -21,11 +21,11 @@ export default function Tschwebel() {
   return (
     <div className="content">
       <Router>
-          <Switch>
-            <Route exact path="/" component={Resume} />
-            <Route exact path="/photos" component={Photos} />
-            <Route exact path="/code" component={Code} />
-          </Switch>
+          <Routes>
+            <Route exact path="/" element={<Resume />} />
+            <Route exact path="/photos" element={<Photos />} />
+            <Route exact path="/code" element={<Code />} />
+          </Routes>
       </Router>
     </div>
   );
