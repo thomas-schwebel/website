@@ -5,6 +5,20 @@ import { Link } from 'react-router-dom';
 export default function Code() {
   const items = [
     {
+      title: "More Than 2",
+      desc: `Scan your own playlists to check out from which artists you like 2 or more tracks. Gives you a hint about which artists you might wanna check more.<br>
+        Coded in Go.
+      `,
+      src: `${process.env.PUBLIC_URL}/code/more-than-2.jpg`,
+      thumb: `${process.env.PUBLIC_URL}/code/more-than-2.jpg`,
+    },
+    {
+      title: "Generative Art",
+      desc: "Having fun with generative art - Coded in JS.",
+      src: `${process.env.PUBLIC_URL}/code/generative-art.jpg`,
+      thumb: `${process.env.PUBLIC_URL}/code/generative-art.jpg`,
+    },
+    {
       title: "Facebook Birthdays Exporter",
       desc: `Small tool to export birthdays from Facebook.<br>
         Minimal tech stack with Java 15. <br><br>

@@ -47,8 +47,8 @@ function Resume() {
                 <Xp
                     title="Software Engineer"
                     from="Jan 21"
-                    to="now">
-                        <p>Platform Teams @ Adevinta (2 years contract)<br/>
+                    to="Jan 23">
+                        <p>Platform Teams @ Adevinta<br/>
                         - Java 9/11/17, Spring boot, Google Cloud, Helm, Kubernetes<br/>
                         - Building a local SAML identity provider based on OAuth + OpenID Connect<br/>
                         - Identity migrations from Keycloak, Auth0<br/>
