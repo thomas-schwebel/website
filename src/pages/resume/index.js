@@ -45,12 +45,12 @@ function Resume() {
             <article>
                 <h3>Freelancer</h3>
                 <Xp
-                    title="Software Engineer"
+                    title="Senior Software Engineer"
                     from="Jan 21"
                     to="Jan 23">
                         <p>Platform Teams @ Adevinta<br/>
                         - Java 9/11/17, Spring boot, Google Cloud, Helm, Kubernetes<br/>
-                        - Building a local SAML identity provider based on OAuth + OpenID Connect<br/>
+                        - Building a local identity provider based on OAuth + OpenID Connect<br/>
                         - Identity migrations from Keycloak, Auth0<br/>
                         - CI/CD pipeline migration<br/>
                         - Onboardings / IRQ Helpdesk<br/>
@@ -157,7 +157,7 @@ function Resume() {
         <section id="about">
             <h1>About</h1>
             <article>
-                <p>Freelance "Fullstack" <b>Software Engineer</b> eager to learn and grow technically.<br/><br/>
+                <p>"Fullstack" <b>Software Engineer</b> eager to learn and grow technically.<br/><br/>
                     Backend guy but not afraid of Frontend, Styling not so much, Happy to automate CI/CD.<br/><br/>
                     Affable and fun to work with, I like to pay attention to details when I build elegant and simple solutions that allow to move fast while breaking things :-)<br/><br/>
                     Looking for a creative place with a great culture where people are enabled.</p>
